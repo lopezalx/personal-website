@@ -38,7 +38,32 @@ body {
     background-color: #555;
 }
 
-#intro-para {
+#about-para {
     display: flex;
     margin-top: 50px; 
+}
+
+.intro-text {
+    margin-top: 15%;
+    margin-left: 30px;
+    font-size: 30px;
+}
+
+.intro-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.header {
+    width: 100%; 
+    height: 100vh;
+}
+#about {
+    width: 100%;
+    height: 100vh;
+}
+
+#contact {
+    width: 100%;
+    height: 100vh;
 }

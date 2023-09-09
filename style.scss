@@ -1,3 +1,64 @@
 //Defining my variables:
-$primary-dark: #000000;
+$primary-dark: #000;
 $primary-light: #ffffff;
+
+* {
+   margin:0;
+   padding:0;
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.navbar {
+   display: flex;
+   justify-content: space-between;
+   align-items: center; 
+   background-color: #333;
+   color: aliceblue;
+}
+
+.navbar-links ul{
+   margin:0;
+   padding: 0;
+   display:flex;
+}
+
+.navbar-links li{
+   list-style: none;
+}
+
+.navbar-links li a{
+   text-decoration: none;
+   color:aliceblue; 
+   padding: 1rem;
+   display: block; 
+}
+
+.navbar-links li:hover {
+   background-color: #555;
+}
+
+#about-para {
+   display: flex;
+   margin-top: 50px; 
+}
+
+
+.intro-text {
+   margin-top: 15%;
+   margin-left: 20px;
+   font-size: 30px;
+   h1 {
+      font-size: 60px;
+      margin-top: 20px;
+   }
+}
+
+//.intro-text h1{
+   //font-size: 60px;
+   //margin-top: 20px;
+//}
