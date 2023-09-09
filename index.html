@@ -23,7 +23,7 @@
 <!--This is col1 following row1-->
         <!--<div class="col">-->
 
-              <section class="header">
+              <section id = "home" class="header">
                 <header>
                  <nav class="navbar">
                     <div class="page-title"> Welcome to my webpage! </div>    
@@ -38,17 +38,62 @@
                  </nav>
                 </header>
 
-                 <div id = "home" class="intro-text">
+                 <div class="intro-text">
                   <h1>Hello, I'm Alex!</h1>
                   <p>Computer Engineer & Web developer</p>
                  </div>   
               </section>
       
 <!--This is my about me section-->
+<!--I'm still working on the written content for this section-->
               <div id="about">
                 <h2>About Me</h2>
                 <p id="about-para">
-                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod corporis minus a quam fugiat fugit odio exercitationem rerum quis temporibus deleniti quo laboriosam aut non beatae consequuntur, repudiandae ut eos.</p> 
+                  I'm a first generation Mexican-American and I'm from Chicago. I know both English and Spanish fluently, I love learning new languages. I'm currently studying French and Japanese.
+                  I recently graduated from the City Colleges of Chicago and obtained an Associates Degree in Engineering Sciences with a focus on Computer Engineering.
+                  I gained transfer admission for Fall of 2024 into the University Of Michigan's Bachelor of Science in Engineering program for Computer Engineering.
+                </p> 
+                <!--<a>Click here to download my resume.</a>-->
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                  <p class="tab-links" onclick="opentab('education')">Education</p>
+                  <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span>Programming Languages</span><br>C++<br>Java<br>JavaScript<br>Python </li>
+                    <li><span>Front-End Development</span><br>HTML<br>CSS<br>SCSS<br>Wireframing</li>
+                  </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                  <p>I graduated from Wilbur Wright College in Spring of 2023 and obtained an Associate of Engineering Science (AES) degree with a focus on Computer Engineering.
+                     I gained admission for UMich's BSE program within Computer Engineering for Fall 2024. 
+                  </p>
+                  <ul>
+                    <li><span>Relevant Course Work</span>
+                      <br>C++ Object Oriented Programming I, II
+                      <br>Java Object Oriented Programming I
+                      <br>Engineering Physics I, II
+                      <br>Calculus I, II, III
+                      <br>Statics
+                      <br>Differential Equations
+                      <br>Linear Algrebra
+                      <br>Discrete Mathematics
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li><span>Harry S. Truman City College of Chicago</span><br><i>Intern</i>, STEAMbassador (Summer 2022)</li>
+                    <li> Collaborated and worked individually to mentor 25 elementary school students and spark an interest in STEAM</li>
+                    <li> Taught connections between math and coding with use of block coding on Lego and Sphero robots</li>
+                    <li> Explained how to create online 3D models on Tinkercad and 3D printed on an Adventurer Series 3 3D Printer</li>
+                    <li> Described connections between arts and coding with use of coding on TunePad</li>
+                  </ul>
+                </div>
               </div>
 
 <!--This is my contact section-->
