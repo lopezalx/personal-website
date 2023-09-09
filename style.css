@@ -1,69 +1,107 @@
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #faf0e6;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    background-color: #333;
-    color: aliceblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: aliceblue;
 }
 
-.navbar-links ul{
-    margin:0;
-    padding: 0;
-    display:flex;
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
-
-.navbar-links li{
-    list-style: none;
+.navbar-links li {
+  list-style: none;
 }
-
-.navbar-links li a{
-    text-decoration: none;
-    color:aliceblue; 
-    padding: 1rem;
-    display: block; 
+.navbar-links li a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 1rem;
+  display: block;
 }
 
 .navbar-links li:hover {
-    background-color: #555;
+  background-color: #555;
 }
 
 #about-para {
-    display: flex;
-    margin-top: 50px; 
+  display: flex;
+  margin-top: 50px;
 }
 
 .intro-text {
-    margin-top: 15%;
-    margin-left: 30px;
-    font-size: 30px;
+  margin-top: 15%;
+  margin-left: 20px;
+  font-size: 30px;
+}
+.intro-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
 }
 
-.intro-text h1{
-    font-size: 60px;
-    margin-top: 20px;
+#home, #about, #contact {
+  width: 100%;
+  height: 100vh;
 }
 
-.header {
-    width: 100%; 
-    height: 100vh;
-}
-#about {
-    width: 100%;
-    height: 100vh;
+h2 {
+  font-size: 40px;
+  font-weight: 500;
 }
 
-#contact {
-    width: 100%;
-    height: 100vh;
+.tab-titles {
+  display: flex;
+  margin: 20px 0 40px;
 }
+
+.tab-links {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #301934;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after {
+  width: 100%;
+}
+
+.tab-contents {
+  display: none;
+}
+.tab-contents ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+.tab-contents ul li span {
+  color: #333;
+  text-decoration: underline;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}/*# sourceMappingURL=style.css.map */
